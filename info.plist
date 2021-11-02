@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>tbsv.grpc.statuscodes</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>97EA3280-A6FD-40B9-8A2F-72B37144B52F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Tobias Vetter</string>
+	<key>description</key>
+	<string>Returns GRPC status code information from https://grpc.github.io/grpc/core/md_doc_statuscodes.html</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>GRPC Status Codes</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://grpc.github.io/grpc/core/md_doc_statuscodes.html</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"0 - OK","arg":"0","subtitle":"Return on Success."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"1 - CANCELLED","arg":"1","subtitle":"The operation was cancelled, typically by the caller."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"2 - UNKNOWN","arg":"2","subtitle":"For example, this error may be returned when a Status value received from another address space belongs to an error-space that isn't known in this address space. Also errors raised by APIs that don't return enough error information may be converted to this error."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"3 - INVALID_ARGUMENT","arg":"3","subtitle":"The client specified an invalid argument."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"4 - DEADLINE_EXCEEDED","arg":"4","subtitle":"The deadline expired before the operation was complete. For operations that change the state of the system, this error may be returned even if the operation is completed successfully. For example, a successful response from a server which was delayed long enough for the deadline to expire."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"5 - NOT_FOUND","arg":"5","subtitle":"Some requested entity wasn't found."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"6 - ALREADY_EXISTS","arg":"6","subtitle":"The entity that a client attempted to create already exists."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"7 - PERMISSION_DENIED","arg":"7","subtitle":"The caller doesn't have permission to execute the specified operation. Don't use PERMISSION_DENIED for rejections caused by exhausting some resource; use RESOURCE_EXHAUSTED instead for those errors. Don't use PERMISSION_DENIED if the caller can't be identified (use UNAUTHENTICATED instead for those errors). To receive a PERMISSION_DENIED error code doesn't imply the request is valid or the requested entity exists or satisfies other pre-conditions."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"8 - RESOURCE_EXHAUSTED","arg":"8","subtitle":"Some resource has been exhausted, perhaps a per-user quota, or perhaps the entire file system is out of space."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"9 - FAILED_PRECONDITION","arg":"9","subtitle":"The operation was rejected because the system is not in a state required for the operation's execution. For example, the directory to be deleted is non-empty or an rmdir operation is applied to a non-directory."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"10 - ABORTED","arg":"10","subtitle":"The operation was aborted, typically due to a concurrency issue such as a sequencer check failure or transaction abort."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"11 - OUT_OF_RANGE","arg":"11","subtitle":"The operation was attempted past the valid range."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"12 - UNIMPLEMENTED","arg":"12","subtitle":"The operation isn't implemented or isn't supported\/enabled in this service."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"13 - INTERNAL","arg":"13","subtitle":"Internal errors. This means that some invariants expected by the underlying system have been broken. This error code is reserved for serious errors."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"14 - UNAVAILABLE","arg":"14","subtitle":"The service is currently unavailable. This is most likely a transient condition that can be corrected if retried with a backoff."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"15 - DATA_LOSS","arg":"15","subtitle":"Unrecoverable data loss or corruption."},{"imagefile":"1d3b287f5d293e8d2629524f7e2118cc0164a1eb.png","title":"16 - UNAUTHENTICATED","arg":"16","subtitle":"The request doesn't have valid authentication credentials for the operation."}]</string>
+				<key>keyword</key>
+				<string>grpc</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Enter a status code</string>
+				<key>title</key>
+				<string>Search GRPC Status Codes</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>97EA3280-A6FD-40B9-8A2F-72B37144B52F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>97EA3280-A6FD-40B9-8A2F-72B37144B52F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>B23A1A21-D1E7-4C17-B82A-78888AA6C47F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/tbsv</string>
+</dict>
+</plist>
